@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EBDB6B7-360A-454F-AB35-DE0D2C32905A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TurkBelge.SERVICES</RootNamespace>
+    <AssemblyName>TurkBelge.SERVICES</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\serviceArchive\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\serviceOib\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connected Services\serviceArchive\EFaturaArchive1.wsdl" />
+    <None Include="Connected Services\serviceArchive\EFaturaArchive8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceArchive\EFaturaArchive81.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceArchive\EFaturaArchive82.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceArchive\EFaturaArchive83.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceArchive\EFaturaArchive84.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceArchive\EFaturaArchive85.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceArchive\EFaturaArchive86.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceArchive\EFaturaArchive87.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ArchiveGenericDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ArchiveGenericDocumentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ArchiveGetInvoiceInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ArchiveGetInvoiceInfoResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ArchiveInvoiceCopyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ArchiveInvoiceExtendedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ArchiveInvoiceReadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ArchiveInvoiceWriteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.CancelEArchiveInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.CancelEArchiveInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.CancelEDefterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.CancelEDefterResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.CopyToArchiveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.EArchiveInvoiceCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.EArchiveInvoiceCountResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GenericReadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GenericReadResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEArchiveInvoiceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEArchiveInvoiceListResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEArchiveInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEArchiveInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEArchiveInvoiceStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEArchiveInvoiceStatusResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEArchiveReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEArchiveReportResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetELedgerStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetELedgerStatusResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEmailEarchiveInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetEmailEarchiveInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetGenericArchiveByPeriodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetGenericArchiveByPeriodResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetGenericArchiveStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.GetGenericArchiveStatusResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.MarkEArchiveInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.MarkEArchiveInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ReadEArchiveReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ReadEArchiveReportResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.ReadFromArchiveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.SendSmsEarchiveInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.SendSmsEarchiveInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.WriteToArchiveExtendedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceArchive\TurkBelge.SERVICES.serviceArchive.WriteToArchiveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\EFaturaOIB.wsdl" />
+    <None Include="Connected Services\serviceOib\EFaturaOIB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceOib\EFaturaOIB1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceOib\EFaturaOIB2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceOib\EFaturaOIB3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.CancelDraftInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.CancelDraftInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.CheckUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.CheckUserResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.getApplicationResponseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.getAppRespResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetEnvelopeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetEnvelopeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetEnvelopeStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetEnvelopeStatusResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceCountResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceStatusAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceStatusAllResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceStatusResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceWithTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetInvoiceWithTypeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetUserListBinaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetUserListBinaryResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetUserListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.GetUserListResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.LoadInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.LoadInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.LoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.LoginResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.LogoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.LogoutResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.MarkEnvelopeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.MarkEnvelopeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.MarkInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.MarkInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.PrepareInvoiceResponseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.PrepareInvoiceResponseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.SendInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.SendInvoiceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.SendInvoiceResponseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.SendInvoiceResponseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.SendInvoiceResponseWithServerSignResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serviceOib\TurkBelge.SERVICES.serviceOib.SendInvoiceResponseWithServerSignResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\serviceArchive\" />
+    <WCFMetadataStorage Include="Connected Services\serviceOib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\serviceOib\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\serviceOib\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\serviceOib\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\serviceArchive\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\serviceArchive\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\serviceArchive\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

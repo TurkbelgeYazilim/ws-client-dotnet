@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b2e3930a-2f42-4567-ae56-78ce092cd5a7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://efaturawstest.turkbelge.com.tr/EFaturaOIB?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EFaturaOIB.xsd" MetadataType="Schema" ID="6d317d0f-c437-4cfd-b5c7-02b673e5d628" SourceId="1" SourceUrl="https://efaturawstest.turkbelge.com.tr/EFaturaOIB?xsd=3" />
+    <MetadataFile FileName="EFaturaOIB.wsdl" MetadataType="Wsdl" ID="b8e9a089-cad5-429e-bac3-d8cb783efe77" SourceId="1" SourceUrl="https://efaturawstest.turkbelge.com.tr/EFaturaOIB?wsdl" />
+    <MetadataFile FileName="EFaturaOIB1.xsd" MetadataType="Schema" ID="be5acd24-ff45-42e3-bfa2-51fad38d1883" SourceId="1" SourceUrl="https://efaturawstest.turkbelge.com.tr/EFaturaOIB?xsd=4" />
+    <MetadataFile FileName="EFaturaOIB2.xsd" MetadataType="Schema" ID="ffa4a8fb-5c64-4245-8442-6ecca57ebc86" SourceId="1" SourceUrl="https://efaturawstest.turkbelge.com.tr/EFaturaOIB?xsd=1" />
+    <MetadataFile FileName="EFaturaOIB3.xsd" MetadataType="Schema" ID="96971692-c091-4895-8a90-5f2b0f1d2273" SourceId="1" SourceUrl="https://efaturawstest.turkbelge.com.tr/EFaturaOIB?xsd=2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
